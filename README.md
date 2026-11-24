@@ -1,11 +1,16 @@
 # Robust Vision Algorithm
 
-고조도(강한 조명) 환경에서 영상의 하이라이트를 압축하고 그림자를 살리는
-DUAL 조명 추정 기반 실시간 영상 보정 패키지입니다.
+고조도(강한 조명) 환경을 위한 실시간 영상 보정 패키지
+DUAL 조명 추정으로 하이라이트는 압축하고, 그림자 속 디테일은 살리는 방식을 적용
 
 - **highlight 모드 (기본)**: DUAL 조명 추정 + 휘도 shoulder 압축으로 밝은 영역을 낮춤
 - **paper 모드**: 논문 방식의 원본/밝은/어두운 후보 다중 해상도 융합 (비교용)
 - CUDA(CuPy)가 있으면 GPU로, 없으면 CPU로 동작
+
+<img width="1276" height="462" alt="image" src="https://github.com/user-attachments/assets/d877c00c-8edf-4977-9f22-8ae8748d1861" />
+
+<img width="1920" height="935" alt="image" src="https://github.com/user-attachments/assets/cf88f5ca-af2d-4cdc-ac82-887a8c0ecb64" />
+
 
 ## 폴더 구조
 
