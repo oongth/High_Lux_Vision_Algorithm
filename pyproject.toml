@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robust-vision-algorithm"
+version = "0.1.0"
+description = "DUAL illumination based real-time highlight compression for high-lux environments"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "opencv-python",
+]
+
+[project.optional-dependencies]
+# GPU 가속: 설치된 CUDA 버전에 맞는 CuPy를 고르세요 (예: CUDA 12.x → cupy-cuda12x)
+cuda = ["cupy-cuda12x"]
+# 웹캠 이름까지 표시 (없으면 인덱스 0~7을 직접 열어 보고 찾음)
+camera = ["cv2-enumerate-cameras"]
+
+[project.scripts]
+robust-vision = "robust_vision.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["robust_vision*"]
+
+[tool.setuptools.package-data]
+"robust_vision.gpu" = ["cuda/*.cu"]

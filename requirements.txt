@@ -1,0 +1,9 @@
+numpy
+scipy
+opencv-python
+
+# 선택: GPU 가속 (CUDA 버전에 맞게 하나만 설치)
+# cupy-cuda12x
+
+# 선택: 웹캠 이름 표시
+# cv2-enumerate-cameras

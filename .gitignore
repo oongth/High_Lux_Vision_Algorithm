@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# 실행 결과
+results/
+
+# 로컬 실행 환경 (tools/setup_cupy.ps1이 생성)
+.packages/
+.build/
