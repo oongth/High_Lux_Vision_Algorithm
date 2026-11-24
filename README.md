@@ -1,4 +1,4 @@
-# Robust Vision Algorithm
+# Robust Vision Algorithm (High Lux)
 
 고조도(강한 조명) 환경을 위한 실시간 영상 보정 패키지
 DUAL 조명 추정으로 하이라이트는 압축하고, 그림자 속 디테일은 살리는 방식을 적용
