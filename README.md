@@ -14,7 +14,7 @@ DUAL 조명 추정으로 하이라이트는 압축하고, 그림자 속 디테�
 <img width="1920" height="935" alt="image" src="https://github.com/user-attachments/assets/cf88f5ca-af2d-4cdc-ac82-887a8c0ecb64" />
 
 
-## 폴더 구조
+# 폴더 구조
 
 ```
 Robust_Vision_Algorithm/
@@ -51,7 +51,7 @@ Robust_Vision_Algorithm/
         └── cli.py            명령줄 인자
 ```
 
-## 설치
+# 설치
 
 ```bash
 pip install -r requirements.txt
@@ -60,7 +60,7 @@ pip install .
 pip install .[cuda,camera]   # GPU 가속, 웹캠 이름 표시까지
 ```
 
-## 실행
+# 실행
 
 프로젝트 폴더(`Robust_Vision_Algorithm/`)에서 실행합니다.
 
@@ -76,7 +76,7 @@ python -m robust_vision --help                # 전체 옵션
 - 종료: 영상 창 또는 트랙바 창의 X 버튼, 터미널에서 `Ctrl+C`
 - 결과: 실행한 위치의 `results/<날짜_시간_ID>/metrics.json` (경로는 `--output-dir`로 변경)
 
-## 코드에서 사용
+# 코드에서 사용
 
 ```python
 import cv2
@@ -88,7 +88,7 @@ image = cv2.imread('input.png')
 enhanced, info = processor(image, ProcessorControls(highlights=80, peak=65))
 ```
 
-## 로컬 실행 환경 (선택)
+# 로컬 실행 환경 (선택)
 
 `tools/setup_cupy.ps1`로 만든 아래 폴더가 프로젝트 폴더에 있으면 자동으로 사용합니다.
 
